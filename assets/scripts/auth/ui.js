@@ -6,7 +6,6 @@ const gameBoard = require('../index.js')
 const signInSuccess = (data) => {
   app.user = data.user
   $('#sign-in').hide()
-  $('#sign-up').hide()
   console.log('signed in!')
   console.log(app)
 }
@@ -34,6 +33,7 @@ const onUpdateSuccess = () => {
 }
 
 const success = (data) => {
+  $('#sign-up').hide()
   console.log(data)
 }
 
